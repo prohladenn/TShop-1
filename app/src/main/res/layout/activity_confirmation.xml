@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Auth.ConfirmationActivity">
+    <FrameLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/back"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_close_circle_black_24dp"/>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/edit_text_code"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/shadow"
+            android:hint="@string/code_hint"
+            android:maxLength="30"
+            android:inputType="phone"
+            android:textSize="18sp" />
+        <FrameLayout
+            android:id="@+id/button_next"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:background="@drawable/button">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:maxLength="20"
+                android:text="Далее"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/button_again"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:background="@drawable/button_black">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:maxLength="20"
+                android:text="Отправить повторно"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+</FrameLayout>

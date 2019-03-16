@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary">
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:text="Главная"
+                android:textSize="18sp"/>
+        </android.support.v7.widget.Toolbar>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:id="@+id/greeting"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Для совершения покупки укажите номер контейнера, указанный на лицевой стороне"
+                android:textSize="16sp"
+                android:layout_margin="15dp"/>
+            <EditText
+                android:id="@+id/box_number"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:maxLength="30"
+                android:background="@drawable/shadow"
+                android:hint=""
+                android:inputType="number" />
+            <FrameLayout
+                android:id="@+id/button_next"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_gravity="center_horizontal|bottom"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:background="@drawable/button">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:maxLength="20"
+                    android:text="Далее"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp" />
+
+            </FrameLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_start"
+        app:menu="@menu/activity_start_drawer" />
+
+</android.support.v4.widget.DrawerLayout>

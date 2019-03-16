@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Products.ProductsActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <FrameLayout
+        android:id="@+id/basket_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/basket_button_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:src="@mipmap/ic_arrow_left_white_24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Корзина"
+            android:textColor="@color/colorWhite"
+            android:textSize="22sp" />
+
+    </FrameLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/basket_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+>
+
+    </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/basket_frame"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:gravity="center"
+        android:layout_gravity="bottom">
+
+        <FrameLayout
+            android:id="@+id/basket_button_buy"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorBlack"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Оплата"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/basket_button_buy"
+            app:layout_constraintStart_toStartOf="@id/basket_button_buy"
+            app:layout_constraintTop_toTopOf="@id/basket_button_buy" />
+
+        <TextView
+            android:id="@+id/basket_text_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/basket_button_buy"
+            app:layout_constraintRight_toLeftOf="@id/basket_text_amount_cur"
+            app:layout_constraintTop_toTopOf="@id/basket_button_buy" />
+
+        <TextView
+            android:id="@+id/basket_text_amount_cur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:text="р"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/basket_button_buy"
+            app:layout_constraintRight_toRightOf="@id/basket_button_buy"
+            app:layout_constraintTop_toTopOf="@id/basket_button_buy" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>

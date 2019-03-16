@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">T-Shop</string>
+    <string name="title_activity_start">StartActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="help_title">Помощь</string>
+    <string name="help_name">Ваше имя</string>
+    <string name="help_number">Контактный номер телефона</string>
+    <string name="help_theme">Тема</string>
+    <string name="help_description">Опишите вашу проблему</string>
+    <string name="help_problem">Ваша проблема</string>
+    <string name="help_send">Отправить</string>
+    <string name="help_problem_description">Поле для ввода описания проблемы</string>
+
+    <string name="register_number">Номер телефона</string>
+    <string name="register_code">Код из СМС</string>
+    <string name="register_name">Ваше имя</string>
+    <string name="register_next">Далее</string>
+    <string name="register_resend">Отправить вопторно</string>
+    <string name="phone_number_hint">Номер телефона</string>
+    <string name="code_hint">Код из смс</string>
+    <string name="ask_name_hint">Как вас зовут?</string>
+    <string name="questions">Дополнительные вопросы</string>
+    <string name="problem1">Водитель не выдал товар</string>
+    <string name="problem2">Товар ненадлежащего качества</string>
+    <string name="more">Другое</string>
+</resources>

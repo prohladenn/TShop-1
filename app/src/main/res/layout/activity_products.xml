@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Products.ProductsActivity">
+
+    <FrameLayout
+        android:id="@+id/products_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/products_button_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:src="@mipmap/ic_arrow_left_white_24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Список товаров"
+            android:textColor="@color/colorWhite"
+            android:textSize="22sp" />
+
+    </FrameLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/products_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+
+        app:layout_constraintBottom_toTopOf="@id/products_frame"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/products_bar">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/products_frame"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <FrameLayout
+            android:id="@+id/products_button_basket"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:background="@drawable/button"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+
+        <TextView
+            android:id="@+id/products_button_basket_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="В корзину"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/products_button_basket"
+            app:layout_constraintStart_toStartOf="@id/products_button_basket"
+            app:layout_constraintTop_toTopOf="@id/products_button_basket" />
+
+        <TextView
+            android:id="@+id/products_button_basket_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Помощь"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/products_button_basket"
+            app:layout_constraintEnd_toEndOf="@id/products_button_basket"
+            app:layout_constraintStart_toStartOf="@id/products_button_basket"
+            app:layout_constraintTop_toTopOf="@id/products_button_basket" />
+
+        <TextView
+            android:id="@+id/products_text_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/products_button_basket"
+            app:layout_constraintRight_toLeftOf="@id/products_text_amount_cur"
+            app:layout_constraintTop_toTopOf="@id/products_button_basket" />
+
+        <TextView
+            android:id="@+id/products_text_amount_cur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:text="р"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/products_button_basket"
+            app:layout_constraintRight_toRightOf="@id/products_button_basket"
+            app:layout_constraintTop_toTopOf="@id/products_button_basket" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/products_orders_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <TextView
+            android:id="@+id/products_orders_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/questions"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/products_orders_text_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/problem1"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/products_orders_text" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:src="@mipmap/ic_chevron_right_black_24dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/products_orders_text_one"
+            app:layout_constraintTop_toTopOf="@+id/products_orders_text_one" />
+
+        <TextView
+            android:id="@+id/products_orders_text_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/problem2"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/products_orders_text_one" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:src="@mipmap/ic_chevron_right_black_24dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/products_orders_text_two"
+            app:layout_constraintTop_toTopOf="@+id/products_orders_text_two" />
+
+        <TextView
+            android:id="@+id/products_orders_text_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/more"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/products_orders_text_two" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:src="@mipmap/ic_chevron_right_black_24dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/products_orders_text_three"
+            app:layout_constraintTop_toTopOf="@+id/products_orders_text_three" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

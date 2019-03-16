@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "438833519053",
+    "firebase_url": "https://carbox-fa7c3.firebaseio.com",
+    "project_id": "carbox-fa7c3",
+    "storage_bucket": "carbox-fa7c3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:438833519053:android:a64a5d89f5d7dad3",
+        "android_client_info": {
+          "package_name": "com.example.tshop.t_shop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "438833519053-jbeqvc08juiapreqrq8tn3go08dtufgm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tshop.t_shop",
+            "certificate_hash": "826e3fb2d189f7df532316954a7f3d6ce0fb8da1"
+          }
+        },
+        {
+          "client_id": "438833519053-o0c12r883d42gfm9ai4noiqcdtoa60f0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrrhgY9YfOtbypL17sVBE9WTXpMnz8W8s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "438833519053-o0c12r883d42gfm9ai4noiqcdtoa60f0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "438833519053-2kts9ugs7aat5togtq8n0bh9fjk1jbsa.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.t-shop.ru.T-Shop"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

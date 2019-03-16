@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/button_help_desk_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="left"
+            android:padding="10dp"
+            android:src="@mipmap/ic_arrow_left_white_24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/help_problem"
+            android:textColor="#FFF"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:id="@+id/button_help_desk_check"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:padding="10dp"
+            android:src="@mipmap/ic_check_white_24dp" />
+
+    </FrameLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_scroll">
+    <EditText
+        android:id="@+id/edit_text_help_problem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_margin="10dp"
+        android:gravity="top|left"
+        android:hint="Сделайте предложение"
+        android:padding="10dp"
+        android:background="#00ffffff"
+        android:textSize="20sp" />
+    </ScrollView>
+</LinearLayout>
